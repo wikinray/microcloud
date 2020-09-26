@@ -10,6 +10,7 @@
     <modules>
         <module>provider-payment8001</module>
         <module>cloud-comsumer-order80</module>
+        <module>cloud-common-api</module>
     </modules>
     <packaging>pom</packaging>
 
