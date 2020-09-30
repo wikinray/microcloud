@@ -15,11 +15,16 @@ eureka:
     instance-id: payment8001
     prefer-ip-address: true
     ip-address: 127.0.0.1
+    #最后一次心态等待时间上线，默认90秒
+    lease-expiration-duration-in-seconds: 2
+    #心跳间隔时间 默认30秒
+    lease-renewal-interval-in-seconds: 1
   client:
     service-url:
       #单机版
-      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka
       #集群版
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
     register-with-eureka: true
     fetch-registry: true
+
