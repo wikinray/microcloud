@@ -1,0 +1,9 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    consul:
+      host: 172.18.30.135
+      port: 8500
